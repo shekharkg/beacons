@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+
+<RelativeLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
@@ -7,14 +8,38 @@
   android:layout_height="match_parent"
   tools:context="com.shekharkg.beacons.MainActivity">
 
-  <TextView
-    android:id="@+id/textView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Hello World!"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
+  <ak.sh.ay.oblique.ObliqueView
+    android:id="@+id/obliqueView"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:scaleType="centerCrop"
+    app:basecolor="@color/colorBeaconCyan"
+    app:ending_slant_angle="0"
+    app:starting_slant_angle="15"/>
 
-</android.support.constraint.ConstraintLayout>
+  <ak.sh.ay.oblique.ObliqueView
+    android:id="@+id/obliqueView1"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:layout_alignParentBottom="true"
+    android:layout_below="@+id/obliqueView"
+    android:scaleType="centerCrop"
+    app:basecolor="@color/colorBeaconTint"
+    app:ending_slant_angle="40"
+    app:starting_slant_angle="0"/>
+
+  <ak.sh.ay.oblique.ObliqueView
+    android:id="@+id/obliqueView2"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_alignParentBottom="true"
+    android:layout_below="@+id/obliqueView"
+    android:layout_marginTop="100dp"
+    android:scaleType="fitXY"
+    app:basecolor="@color/colorBeaconIndigo"
+    app:ending_slant_angle="180"
+    app:starting_slant_angle="150"/>
+
+</RelativeLayout>
+
+
