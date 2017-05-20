@@ -9,36 +9,36 @@
   tools:context="com.shekharkg.beacons.MainActivity">
 
   <ak.sh.ay.oblique.ObliqueView
-    android:id="@+id/obliqueView"
+    android:id="@+id/beaconCyan"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
+    android:layout_height="@dimen/dimen150"
     android:scaleType="centerCrop"
     app:basecolor="@color/colorBeaconCyan"
-    app:ending_slant_angle="0"
-    app:starting_slant_angle="15"/>
+    app:ending_slant_angle="@integer/int0"
+    app:starting_slant_angle="@integer/int15"/>
 
   <ak.sh.ay.oblique.ObliqueView
-    android:id="@+id/obliqueView1"
+    android:id="@+id/beaconTint"
     android:layout_width="match_parent"
-    android:layout_height="500dp"
+    android:layout_height="@dimen/dimen500"
     android:layout_alignParentBottom="true"
-    android:layout_below="@+id/obliqueView"
+    android:layout_below="@+id/beaconCyan"
     android:scaleType="centerCrop"
     app:basecolor="@color/colorBeaconTint"
-    app:ending_slant_angle="40"
-    app:starting_slant_angle="0"/>
+    app:ending_slant_angle="@integer/int40"
+    app:starting_slant_angle="@integer/int0"/>
 
   <ak.sh.ay.oblique.ObliqueView
-    android:id="@+id/obliqueView2"
+    android:id="@+id/beaconIndigo"
     android:layout_width="match_parent"
-    android:layout_height="400dp"
+    android:layout_height="@dimen/dimen350"
     android:layout_alignParentBottom="true"
-    android:layout_below="@+id/obliqueView"
-    android:layout_marginTop="100dp"
+    android:layout_below="@+id/beaconCyan"
+    android:layout_marginTop="@dimen/dimen100"
     android:scaleType="fitXY"
     app:basecolor="@color/colorBeaconIndigo"
-    app:ending_slant_angle="180"
-    app:starting_slant_angle="150"/>
+    app:ending_slant_angle="@integer/int180"
+    app:starting_slant_angle="@integer/int145"/>
 
 </RelativeLayout>
 
