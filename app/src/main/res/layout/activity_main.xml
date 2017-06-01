@@ -11,7 +11,7 @@
   <ak.sh.ay.oblique.ObliqueView
     android:id="@+id/beaconCyan"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/dimen150"
+    android:layout_height="@dimen/dimen200"
     android:scaleType="centerCrop"
     app:basecolor="@color/colorBeaconCyan"
     app:ending_slant_angle="@integer/int0"
