@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
@@ -15,7 +14,7 @@
     android:scaleType="centerCrop"
     app:basecolor="@color/colorBeaconCyan"
     app:ending_slant_angle="@integer/int0"
-    app:starting_slant_angle="@integer/int15"/>
+    app:starting_slant_angle="@integer/int15" />
 
   <ak.sh.ay.oblique.ObliqueView
     android:id="@+id/beaconTint"
@@ -26,7 +25,7 @@
     android:scaleType="centerCrop"
     app:basecolor="@color/colorBeaconTint"
     app:ending_slant_angle="@integer/int40"
-    app:starting_slant_angle="@integer/int0"/>
+    app:starting_slant_angle="@integer/int0" />
 
   <ak.sh.ay.oblique.ObliqueView
     android:id="@+id/beaconIndigo"
@@ -38,7 +37,7 @@
     android:scaleType="fitXY"
     app:basecolor="@color/colorBeaconIndigo"
     app:ending_slant_angle="@integer/int180"
-    app:starting_slant_angle="@integer/int145"/>
+    app:starting_slant_angle="@integer/int145" />
 
 </RelativeLayout>
 
